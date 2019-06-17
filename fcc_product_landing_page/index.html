@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./icon-works-webfont.ttf" />
+    <title>Generic Company | Landing Page</title>
+  </head>
+  <body>
+    <header id="header">
+      <img
+        id="header-img"
+        src="http://www.gtgraphics.org/generics/99gen_houses.jpg"
+        alt="logo"
+      />
+      <h1 id="header-text">ABC Houses</h1>
+      <nav id="nav-bar">
+        <a href="#header" class="nav-link">About Us</a>
+        <span class="nav-line">|</span>
+        <a href="#video" class="nav-link">Our Process</a>
+        <span class="nav-line">|</span>
+        <a href="#form" class="nav-link">Contact Us</a>
+      </nav>
+    </header>
+    <main id="main-content">
+      <div id="description-email">
+        <h2 id="company-description">Your Home, Our Mission</h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter Your Email"
+          />
+          <input type="submit" value="Submit" id="submit" />
+        </form>
+      </div>
+      <div id="characteristics">
+        <div class="characteristic-img">
+          <img src="./img/icons8-Approval.png" alt="Certified Badge" />
+          <img src="./img/icons8-Maintenance.png" alt="Maintenance Badge" />
+          <img src="./img/icons8-Online Support.png" alt="Support Badge" />
+        </div>
+        <div class="characteristic-text">
+          <div class="item">
+            <h3 class="description-heading">Certified Realtors</h3>
+            <p class="characteristic-description">
+              Our realtors are certified by the National Institute of Real
+              Estate.
+            </p>
+          </div>
+          <div class="item">
+            <h3 class="description-heading">Yearly Maintenance</h3>
+            <p class="characteristic-description">
+              We perform a stress test on all estates on a yearly basis.
+            </p>
+          </div>
+          <div class="item">
+            <h3 class="description-heading">24/7 Support</h3>
+            <p class="characteristic-description">
+              Our dedicated support team is always here to help.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="houses-gallery">
+        <h2 id="houses-heading">Our Houses</h2>
+        <video
+          src="https://www.youtube.com/watch?v=PPzyGWjMMQI"
+          id="video"
+          crossorigin="use-credentials"
+        ></video>
+      </div>
+    </main>
+
+    <footer id="footer">
+      <h4 class="copyright">Copyright 2019, ABC</h4>
+      <p class="right">All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
