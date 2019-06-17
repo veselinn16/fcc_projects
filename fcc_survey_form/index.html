@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=News+Cycle&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <div class="survey-container">
+      <div class="survey-header">
+        <h1 id="title">The <span id="coolest">Coolest</span> Form</h1>
+        <p id="description">Tell us about yourself with these questions :)</p>
+      </div>
+      <form action="" id="survey-form">
+        <fieldset class="personal">
+          <div class="input-field">
+            <label class="text-label" id="name-label" for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter Your Name"
+              required
+            />
+          </div>
+          <div class="input-field">
+            <label
+              class="text-label"
+              id="email-label"
+              for="email"
+              placeholder="Enter Your Email"
+              >Email</label
+            >
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter Your Number"
+              required
+            />
+          </div>
+          <div class="input-field">
+            <label class="text-label" id="number-label" for="number"
+              >Favorite Number</label
+            >
+            <input
+              type="number"
+              id="number"
+              min="0"
+              max="9"
+              placeholder="Your Favorite Number"
+            />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Gender</legend>
+          <select name="dropdown" id="dropdown">
+            <option value="man">Man</option>
+            <option value="woman">Woman</option>
+            <option value="prefer not to tell">Prefer Not to Tell</option>
+          </select>
+        </fieldset>
+
+        <div class="contact-interests">
+          <fieldset>
+            <legend>Preferred Contact Method</legend>
+            <div>
+              <input
+                type="radio"
+                name="contact"
+                id="contact-1"
+                value="email"
+                checked
+              />
+              <label for="contact-1">Email</label>
+            </div>
+            <div>
+              <input type="radio" name="contact" id="contact-2" value="phone" />
+              <label for="contact-2">Phone</label>
+            </div>
+            <div>
+              <input type="radio" name="contact" id="contact-3" value="fax" />
+              <label for="contact-3">Fax</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Your interests</legend>
+            <div>
+              <input
+                type="checkbox"
+                name="interests"
+                id="interest-1"
+                value="coding"
+              />
+              <label for="interest-1">Coding</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                name="interests"
+                id="interest-2"
+                value="art"
+              />
+              <label for="interest-2">Art</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                name="interests"
+                id="interest-3"
+                value="movies"
+              />
+              <label for="interest-3">Movies</label>
+            </div>
+          </fieldset>
+        </div>
+        <label class="text-label" for="user-reccomendation"
+          >Do you have any suggestions?</label
+        >
+        <textarea
+          name="reccomendation"
+          id="user-recommendation"
+          cols="20"
+          rows="5"
+        >
+We'd love to hear them...
+                </textarea
+        >
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>

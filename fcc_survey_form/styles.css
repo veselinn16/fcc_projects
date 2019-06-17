@@ -1,0 +1,183 @@
+body {
+  background-image: linear-gradient(
+    130deg,
+    #ffffff 0%,
+    #6284ff 50%,
+    #ff0000 100%
+  );
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.survey-container {
+  font-family: "News Cycle", sans-serif;
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 6px 5px 12px -4px rgba(0, 0, 0, 0.75);
+}
+
+.survey-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#title {
+  font-weight: 100;
+  font-family: Lobster, cursive;
+  margin-bottom: 0;
+}
+
+#coolest {
+  font-weight: 900;
+}
+
+#description {
+  margin-top: 0;
+}
+
+fieldset {
+  border: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.personal > * {
+  margin: 5px;
+}
+
+.input-field {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#survey-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 75%;
+}
+
+legend,
+.text-label {
+  font-weight: bold;
+}
+
+#name-label {
+}
+
+#name {
+}
+
+#email-label {
+}
+
+#email {
+}
+
+#number-label {
+}
+
+#number {
+  width: 57%;
+}
+
+#dropdown {
+}
+
+#contact-1 {
+}
+
+#contact-2 {
+}
+
+#contact-3 {
+}
+
+#interest-1 {
+}
+
+#interest-2 {
+}
+
+#interest-3 {
+}
+
+#user-recommendation {
+  padding: 5px 0 0 7px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+#user-recommendation,
+#dropdown {
+  font-family: inherit;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  background: #f1f1f1;
+  border: none;
+  padding-left: 7px;
+}
+
+@keyframes diamond-shiny {
+  from {
+    filter: drop-shadow(0 0 2px #6284ff) drop-shadow(0 0 1px #ff0000);
+  }
+  to {
+    filter: drop-shadow(0 0 5px #ff0000) drop-shadow(0 0 4px #6284ff);
+  }
+}
+
+#submit {
+  background-image: linear-gradient(
+    130deg,
+    #ffffff 0%,
+    #6284ff 50%,
+    #ff0000 100%
+  );
+  color: #fff;
+  cursor: pointer;
+  margin: 1rem auto;
+  border: none;
+  width: 5rem;
+  height: 5rem;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  font-family: Lobster, cursive;
+  transition: transform 0.2s;
+}
+
+#submit:hover {
+  animation: diamond-shiny 1s infinite alternate;
+}
+
+#submit:active,
+#submit:focus {
+  transform: scale(0.8);
+  outline: 0;
+}
+
+@media screen and (max-width: 1600px) {
+  .survey-container {
+    height: 90%;
+  }
+
+  .contact-interests {
+    display: flex;
+    justify-content: space-around;
+  }
+}
