@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>FCC | Documentation Page</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header><h1 id="navbar-heading">React Documentation</h1></header>
+      <a href="#Getting_Started" class="nav-link">Getting Started</a>
+      <a href="#Learn_React" class="nav-link">Learn React</a>
+      <a href="#Add_React_to_a_Website" class="nav-link"
+        >Add React to a Website</a
+      >
+      <a href="#Create_a_New_React_App" class="nav-link"
+        >Create a New React App</a
+      >
+      <a href="#Create_a_React_Component" class="nav-link"
+        >Create a React Component</a
+      >
+      <a href="#Props_are_Read-Only" class="nav-link">Props are Read-Only</a>
+    </nav>
+
+    <main id="main-doc">
+      <section class="main-section" id="Getting_Started">
+        <header>
+          <h2 class="section-heading">Getting Started</h2>
+        </header>
+          <p class="section-para">
+            This documentation is a copy of the React Documentation
+          </p>
+          <p class="section-para">
+            React is a JavaScript library for building user interfaces. Learn
+            what React is all about on <a>React's homepage</a>.
+          </p>
+          <ul class="main-list">
+            <li>
+              <a
+                class="main-link"
+                href="https://reactjs.org/docs/getting-started.html#try-react"
+                >Try React</a
+              >
+            </li>
+            <li>
+              <a
+                class="main-link"
+                href="https://reactjs.org/docs/getting-started.html#learn-react"
+                >Learn React</a
+              >
+            </li>
+            <li>
+              <a
+                class="main-link"
+                href="https://reactjs.org/docs/getting-started.html#staying-informed"
+                >Staying Informed</a
+              >
+            </li>
+            <li>
+              <a
+                class="main-link"
+                href="https://reactjs.org/docs/getting-started.html#versioned-documentation"
+                >Versioned Documentation</a
+              >
+            </li>
+          </ul>
+      </section>
+      <hr class="h-rule" />
+      <section class="main-section" id="Learn_React">
+        <header>
+          <h2 class="section-heading">Learn React</h2>
+        </header>
+          <p class="section-para">
+            People come to React from different backgrounds and with different
+            learning styles. Whether you prefer a more theoretical or practical
+            approach, we hope you'll find this section helpful
+          </p>
+          <ul class="main-list">
+            <li>
+              If you prefer to learn by doing, start with this
+              <a href="https://reactjs.org/tutorial/tutorial.html" class="main-link">practical tutorial</a>
+            </li>
+            <li>
+              If you prefer to learn concepts step by step, start with a
+              <a href="https://reactjs.org/docs/hello-world.html" class="main-link">guide to main concepts</a>
+            </li>
+          </ul>
+          <p class="section-para">
+            Like any unfamiliar technology, React does have a learning curve.
+            With practice and some patience, you
+            <span class="italic">will</span> get the hang of it.
+          </p>
+        </header>
+      </section>
+      <hr class="h-rule" />
+      <section class="main-section" id="Add_React_to_a_Website">
+        <header>
+          <h2 class="section-heading">Add React to a Website</h2>
+        </header>
+          <h3 class="section-heading-2">
+            Use as little or as much React as you need.
+          </h3>
+          <p class="section-para">
+            React has been designed from the start for gradual adoption, and
+            <span class="italic"
+              >you can use as little or as much React as you need</span
+            >. Perhaps you only want to add some “sprinkles of interactivity” to
+            an existing page. React components are a great way to do that.
+          </p>
+          <p class="section-para">
+            The majority of websites aren’t, and don’t need to be, single-page
+            apps. With
+            <span class="italic">a few lines of code and no build tooling</span
+            >, try React in a small part of your website. You can then either
+            gradually expand its presence, or keep it contained to a few dynamic
+            widgets.
+          </p>
+      </section>
+      <hr class="h-rule" />
+      <section class="main-section" id="Create_a_New_React_App">
+        <header>
+          <h2 class="section-heading">Create a New React App</h2>
+        </header>
+          <h3 class="section-heading-2">
+            You can use the Create React App toolchain.
+          </h3>
+          <p class="section-para">
+            <a href="https://github.com/facebook/create-react-app" class="main-link">Create React App</a> is a comfortable
+            environment for <span class="bold">learing React</span>, and is the
+            best way to start building
+            <span class="bold"
+              >a new <a href="https://reactjs.org/docs/glossary.html#single-page-application" class="main-link">single-page</a> application</span
+            >
+            in React.
+          </p>
+          <p class="section-para">
+            It sets up your development environment so that you can use the
+            latest JavaScript features, provides a nice developer experience,
+            and optimizes your app for production. You’ll need to have Node >= 6
+            and npm >= 5.2 on your machine. To create a project, run:
+          </p>
+          <pre>
+            <code>
+  npx create-react-app my-app
+
+  cd my-app
+
+  npm start
+          </code>
+        </pre>
+      </section>
+      <hr class="h-rule" />
+      <section class="main-section" id="Create_a_React_Component">
+        <header>
+          <h2 class="section-heading">Create a React Component</h2>
+        </header>
+
+          <p class="section-para">
+            Create a file called <code>like_button.js</code> next to your HTML
+            page.
+          </p>
+          <p class="section-para">Then create your component.</p>
+          <pre>
+            <code>
+  class Welcome extends React.Component {
+    render() {
+        return elements;
+    }
+  }
+          </code>
+        </pre>
+        </header>
+      </section>
+      <hr class="h-rule" />
+      <section class="main-section" id="Props_are_Read-Only">
+        <header>
+          <h2 class="section-heading">Props are Read-Only</h2>
+        </header>
+          <p class="section-para">
+            Whether you declare a component as a function or a class, it must
+            never modify its own props. Consider this <code>sum</code> function:
+          </p>
+          <pre>
+            <code>
+  function sum(a, b) {
+    return a + b;
+  }
+          </code>
+        </pre>
+          <p class="section-para">
+            Such functions are called <a href="https://en.wikipedia.org/wiki/Pure_function" class="main-link">“pure”</a> because they do not attempt
+            to change their inputs, and always return the same result for the
+            same inputs.
+          </p>
+          <p class="section-para">
+            In constrast, this function is impure because it changes its own
+            input:
+          </p>
+          <pre>
+            <code>
+  function withdraw(account, amount) {
+      account.total -= amount;
+  }
+          </code>
+        </pre>
+      </section>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
