@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Quattrocento&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Parisienne&display=swap");
+@import url("https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /* this defines what 1rem is */
+  /* 1rem = 10px */
+  font-size: 62.5%;
+}
+
+@media (max-width: 1200px) {
+  html {
+    /* 1rem = 9px */
+    font-size: 56.25%;
+  }
+}
+
+@media (max-width: 900px) {
+  html {
+    /* 1rem = 8px */
+    font-size: 56.25%;
+  }
+}
+
+@media (min-width: 1600px) {
+  html {
+    /* 1rem = 12px */
+    font-size: 75%;
+  }
+}
+
+:root {
+  --color-main-1: #c6dffd;
+  --color-main-2: #2e115f;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: Oswald, sans-serif;
+}
+
+#navbar {
+  background: var(--color-main-1);
+  color: var(--color-main-2);
+  padding: 1.7rem 2rem;
+  font-size: 2rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, 0.75);
+  animation: roll-down 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  z-index: 99;
+}
+
+#signature {
+  font-size: 2.4rem;
+  font-weight: bold;
+  font-family: "Parisienne", cursive;
+}
+
+.nav-link {
+  color: var(--color-main-2);
+  margin-left: 0.5rem;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+@keyframes roll-down {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+.nav-link:hover {
+  color: #cf475e;
+  letter-spacing: 2px;
+}
+
+.nav-link:not(:last-of-type) {
+  margin-right: 0.5rem;
+}
+
+#welcome-section {
+  height: 100vh;
+  background: var(--color-main-2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Oswald, sans-serif;
+  color: var(--color-main-1);
+}
+
+#welcome-heading {
+  font-size: 12rem;
+  font-family: Quattrocento, serif;
+}
+
+.welcome-subheading {
+  font-size: 5rem;
+}
+
+#projects {
+  background: #862d89;
+  padding: 4rem 4rem 7rem 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  grid-template-rows: 10rem repeat(auto-fill, minmax(30%, 1fr));
+  grid-gap: 2rem;
+}
+
+#projects-heading {
+  grid-area: 1 / 1 / 2 / -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  color: #dfc5e6;
+  font-family: Quattrocento, serif;
+  transition: letter-spacing 0.2s;
+}
+
+.project-tile {
+  height: 100%;
+  transition: transform 0.2s;
+  box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, 0.75);
+  background: transparent;
+}
+
+.project-tile:hover {
+  transform: translateY(-1rem);
+}
+
+.project-tile:hover .code {
+  opacity: 1;
+}
+
+.project-link {
+  text-decoration: none;
+  color: #862d89;
+}
+
+.project-img {
+  width: 100%;
+  height: 90%;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.project-title-container {
+  margin-top: -0.31rem;
+  height: 10%;
+  background: #dfc5e6;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.project-title {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+
+.code {
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+#contacts-section {
+  background: var(--color-main-2);
+  color: var(--color-main-1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  border-bottom: 5px solid #862d89;
+}
+
+#contacts-heading {
+  font-size: 7rem;
+}
+
+#contacts-subheading {
+  font-size: 5rem;
+  font-weight: 300;
+}
+
+#contacts-links {
+  margin-top: 5rem;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-link {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s;
+}
+
+.contact-link:hover {
+  transform: scale(1.2);
+  color: #fff;
+}
+
+.contact {
+  margin-left: 1rem;
+  color: inherit;
+  text-decoration: none;
+  font-weight: 100;
+  font-size: 3rem;
+}
+
+.im-instagram {
+  transform: translateY(2px);
+}
+
+#footer {
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-main-1);
+  color: var(--color-main-2);
+  font-weight: 100;
+  font-family: Quattrocento, serif;
+}
+
+#footer-heading {
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+
+#footer-subheading {
+  font-size: 2rem;
+}
