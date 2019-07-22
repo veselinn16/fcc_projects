@@ -1,3 +1,4 @@
+// A function, which takes a string of words, encoded in the ROT13 cipher and deciphers it
 function rot13(str) {
   const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   let wordArr = str.split("");
