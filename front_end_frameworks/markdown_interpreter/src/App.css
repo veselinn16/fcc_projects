@@ -1,0 +1,155 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /* this defines what 1rem is */
+  /* 1rem = 10px */
+  font-size: 62.5%;
+}
+
+@media (max-width: 1200px) {
+  html {
+    /* 1rem = 9px */
+    font-size: 56.25%;
+  }
+}
+
+@media (max-width: 900px) {
+  html {
+    /* 1rem = 8px */
+    font-size: 56.25%;
+  }
+}
+
+@media (min-width: 1600px) {
+  html {
+    /* 1rem = 12px */
+    font-size: 75%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+/* HEADER */
+.header,
+.footer {
+  height: 10vh;
+  background: #384c4a;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Livvic", sans-serif;
+}
+
+.header {
+  font-size: 2rem;
+}
+
+.footer {
+  font-size: 1.2rem;
+}
+
+.md-app {
+  display: flex;
+  height: 80vh;
+}
+
+.input-container,
+.preview-container {
+  width: 50%;
+}
+
+.input-container {
+  background: #525299;
+}
+
+.input-header {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5%;
+  padding: 0 1.5rem 0 0;
+}
+
+.input-header-partition {
+  display: flex;
+  align-items: center;
+}
+
+.input-header-icon {
+  font-size: 1.5rem;
+}
+
+.input-header-heading {
+  font-family: "Livvic", sans-serif;
+  padding-left: 1rem;
+  margin: 0;
+}
+
+.input {
+  background: #b6dce5;
+  height: 95%;
+  width: 100%;
+  font-size: 2rem;
+}
+
+.preview-container {
+  background: #71adb2;
+  padding: 0.5rem 2rem;
+}
+
+#preview {
+  background: inherit;
+  font-family: "Livvic", sans-serif;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+#preview > hr {
+  border: 1px solid #fff;
+}
+
+#preview > h1 {
+  margin: 0.8rem 0;
+}
+
+#preview > h2 {
+  margin: 0.7rem 0;
+}
+
+#preview > * {
+  margin: 0.3rem 0;
+}
+
+#preview li {
+  margin-left: 1.8rem;
+}
+
+#preview img {
+  margin: 0.5rem 0;
+  height: 15rem;
+  width: 20rem;
+}
