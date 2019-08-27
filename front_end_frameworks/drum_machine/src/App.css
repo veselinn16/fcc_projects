@@ -1,0 +1,106 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1rem = 10px, 10px : 16px = 62.5% */
+}
+
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+
+::selection {
+  background: #00317e;
+  color: #fff;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#drum-machine {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(img/hero.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+}
+
+.logo {
+  font-family: Lobster, cursive;
+  font-size: 5rem;
+  color: #fff;
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
+    1px 1px 1px rgba(0, 0, 0, 0.5), 0px 5px 2px rgba(28, 110, 164, 0.67);
+}
+
+.display-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 14rem;
+}
+
+#display {
+  font-family: 'Lobster', cursive;
+  width: 20rem;
+  height: 8rem;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.3);
+  margin: 0;
+}
+
+.pressed-key {
+  font-size: 6rem;
+  color: #fff;
+}
+
+.drum-pads {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-column-gap: 4rem;
+}
+
+.drum-pad {
+  display: flex;
+  line-height: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  font-family: 'Tulpen One', cursive;
+  font-size: 4rem;
+  font-weight: 900;
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.2s;
+  border: 2px solid transparent;
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.drum-pad:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: #00317e;
+  border: 2px solid #fff;
+}
+
+.drum-pad:active {
+  background: #412;
+  border: 2px solid #412;
+  transform: scale(1.1);
+  outline: none;
+}
+
+.drum-pad:focus {
+  outline: none;
+}
